@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="js6.js">
+    </script>
+    <style>
+    </style>
+  </head>
+  <body onload="getFirstName()">
+    <p id="displayName"></p>
+  </body>
+</html>
