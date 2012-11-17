@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script>
+function validateForm(){
+   console.log("formcalled");
+   var i,validation=true;
+   var form=document.getElementsByName("myForm")[0];
+   var list_inputs=form.getElementsByClassName("input");
+   for( i=0;i<list_inputs.length;i++){
+     if (list_inputs[i].value==""){ 
+       validation=false;
+       alert(list_inputs[i].name+" must be filled out");
+       return false;
+     }
+}    
+   var text_area= form.getElementsByClassName("textarea")[0];
+   var val=text_area.value.length;
+   if(val<10){
+     alert("text area needs to be atleast 10 characters");
+     return false;
+   }
+  
+   var check_box= form.getElementsByClassName("checkbox")[0];     
+     if(validation==true && check_box.checked==false){
+       alert("you must accept all the conditions my friend..else.. you wont see tomorrow morning.. boom!");
+       return false;
+     }
+}
+</script>
+</head>
+<body>
+  <form name="myForm" action="" onsubmit="return validateForm()">
+    <table>
+      <tr>
+      <td>Login-id</td>
+      <td><input class="input" type="text" name="Login-id"><br></td>
+      </tr>
+      <tr>
+      <td>Email-id:</td>
+      <td><input class="input" type="text" name="Email-id"><br></td>
+      </tr>
+      <tr>
+      <td>Name:</td>
+      <td><input class="input" type="text" name="Name"><br></td>
+      </tr>
+      <tr>
+      <td>TimeZone:</td>
+      <td><input class="input" type="text" name="TimeZone"><br></td>
+      </tr>
+      <tr>
+      <td>HomePage:</td>
+      <td><input class="input" type="text" name="HomePage"><br></td>
+      </tr>
+      <tr>
+      <td>About Me: </td>
+      <td><textarea class="textarea" style="width:360px;height:135px;margin-top:10px;border-style:solid;border-width:1px;border-color:#b9b9b9;" name="comments"></textarea>
+      </td>
+      </tr>
+      <tr>
+      <td colspan="2"><input class="checkbox" type="checkbox" >Receieve notification of comments</td>
+      </tr>
+      <tr>
+      <td colspan="2"><p>You will be sent an email when someone posts comments on your blog or album</p></td>
+      </tr>
+  </table>
+  <input type="submit" value="Submit" ></td></tr>
+  </form>
+</body>
+
+</html>
+
+
