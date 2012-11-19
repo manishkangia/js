@@ -1,7 +1,7 @@
 function checkField() {
     var inputEle=document.getElementById("inputElement").value;
     var putEle=document.getElementById("putElement");
-    var regex = /^\d+$/;
+    var regex = /^(\+|\-){0,1}\d\.{0,1}\d*$/;
     var check=regex.test(inputEle);
     if(check) {
        putEle.value="true";
