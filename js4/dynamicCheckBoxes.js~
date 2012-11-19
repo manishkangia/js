@@ -4,14 +4,17 @@ function dispChildList(callingNode) {
     var isChecked=callingNode.checked;
     var list= document.getElementsByClassName(groupName);
     
+    for(var i = 1;i < list.length; i++)
+        list[i].checked = true;
+        
     if(isChecked){
         list[1].style.display="";
-        getFocus(callingNode);
     }
     else{
         list[1].style.display = "none";
     }
     
+    getFocus(callingNode);
 }
 
 function getFocus(focusNode){

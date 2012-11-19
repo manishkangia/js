@@ -11,27 +11,27 @@
     <div class="container">
       <input class="colors" type="checkbox" onclick="dispChildList(this)">colors<br>
       <ul class="colors" type=none style="padding-left:20px;display:none;">
-        <li ><input type="checkbox" value="red">red<br></li>
-        <li ><input type="checkbox" value="yellow">yellow<br></li>
-        <li ><input type="checkbox" value="green">green<br></li>
-        <li ><input type="checkbox" value="blue">blue</li>
+        <li ><input class="colors" type="checkbox" value="red">red<br></li>
+        <li ><input class="colors" type="checkbox" value="yellow">yellow<br></li>
+        <li ><input class="colors" type="checkbox" value="green">green<br></li>
+        <li ><input class="colors" type="checkbox" value="blue">blue</li>
       </ul>
       <input class="drinks" type="checkbox" onclick="dispChildList(this)">drinks<br>
       <ul class="drinks" type=none style="padding-left:20px;display:none;">
-        <li ><input type="checkbox">coke</li>
-        <li ><input type="checkbox">pepsi</li>
-        <li ><input type="checkbox">dew</li>
+        <li ><input class="drinks" type="checkbox">coke</li>
+        <li ><input class="drinks" type="checkbox">pepsi</li>
+        <li ><input class="drinks" type="checkbox">dew</li>
       </ul>
       <input class="movies" type="checkbox" onclick="dispChildList(this)">movies<br>
       <ul class="movies" type=none style="padding-left:20px;display:none">
-        <li ><input type="checkbox">dar</li>
-        <li ><input type="checkbox">sir</li>
+        <li ><input class="movies" type="checkbox">dar</li>
+        <li ><input class="movies" type="checkbox">sir</li>
       </ul>
       <input class="bikes" type="checkbox" onclick="dispChildList(this)">bikes<br>
       <ul class="bikes" type=none style="padding-left:20px;display:none">
-        <li ><input type="checkbox">v-rod</li>
-        <li ><input type="checkbox">pulsar</li>
-        <li ><input type="checkbox">cbz</li>
+        <li ><input class="bikes" type="checkbox">v-rod</li>
+        <li ><input class="bikes" type="checkbox">pulsar</li>
+        <li ><input class="bikes" type="checkbox">cbz</li>
       </ul>
     </div>
   </body>
