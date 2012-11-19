@@ -10,7 +10,7 @@
   </head>
   <body style="background:Khaki" >
   <div align="center" style="width:800px;margin:100px auto 0px auto">
-  <select id="list1" size="7" multiple="multiple" onclick="generateList(this)">
+  <select id="list1" size="7" multiple="multiple">
   <option value="Denmark">Denmark</option>
   <option value="Dejiboiti">Dejiboiti</option>
   <option value="Dominica">Dominica</option>
@@ -20,7 +20,7 @@
   </select>
   <input id="buttons" type="button" value="add" onclick="move('list1','list2')">
   <input id="buttons" type="button" value="remove" onclick="move('list2','list1')">
-  <select id="list2" size="7" multiple="multiple" onclick="generateList(this)">
+  <select id="list2" size="7" multiple="multiple" >
   <option value="pakistan">pakistan
   </select>
   
