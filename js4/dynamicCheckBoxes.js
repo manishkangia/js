@@ -1,20 +1,29 @@
 
 function dispChildList(callingNode) {
+    
     var groupName=callingNode.className;
-    var isChecked=callingNode.checked;
     var list= document.getElementsByClassName(groupName);
     
-    //Get all sub_checkboxes in same state as the checkbox
-    for(var i = 1;i < list.length; i++)
-        list[i].checked = true;
-        
-    if(isChecked){
-        list[1].style.display="";
+    if(list[2].style.display=="") {
+        list[2].style.display="none";
+    }    
+    else {
+        list[2].style.display="";
     }
-    else{
-        list[1].style.display = "none";
+    getFocus(callingNode);    
+}
+
+function checkChildList(callingNode) {
+    var groupName=callingNode.className;
+    var list= document.getElementsByClassName(groupName);
+    
+    if(list[2].style.display=="none") {
+        dispChildList(callingNode);
     }
-    //Shift focus to selected checkbox
+    
+    for(var i = 2;i < list.length; i++)
+        list[i].checked = list[0].checked;
+    
     getFocus(callingNode);
 }
 

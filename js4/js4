@@ -9,25 +9,29 @@
   </head>
   <body>
     <div class="container">
-      <input class="colors" type="checkbox" onclick="dispChildList(this)">colors<br>
+      <input class="colors" type="checkbox" onclick="checkChildList(this)">
+      <a class="colors" onclick="dispChildList(this)">colors</a><br>
       <ul class="colors" type=none style="padding-left:20px;display:none;">
         <li ><input class="colors" type="checkbox" value="red">red<br></li>
         <li ><input class="colors" type="checkbox" value="yellow">yellow<br></li>
         <li ><input class="colors" type="checkbox" value="green">green<br></li>
         <li ><input class="colors" type="checkbox" value="blue">blue</li>
       </ul>
-      <input class="drinks" type="checkbox" onclick="dispChildList(this)">drinks<br>
+      <input class="drinks" type="checkbox" onclick="checkChildList(this)">
+      <a class="drinks" onclick="dispChildList(this)">drinks</a><br>
       <ul class="drinks" type=none style="padding-left:20px;display:none;">
         <li ><input class="drinks" type="checkbox">coke</li>
         <li ><input class="drinks" type="checkbox">pepsi</li>
         <li ><input class="drinks" type="checkbox">dew</li>
       </ul>
-      <input class="movies" type="checkbox" onclick="dispChildList(this)">movies<br>
+      <input class="movies" type="checkbox" onclick="checkChildList(this)">
+      <a class="movies" onclick="dispChildList(this)">movies</a><br>
       <ul class="movies" type=none style="padding-left:20px;display:none">
         <li ><input class="movies" type="checkbox">dar</li>
         <li ><input class="movies" type="checkbox">sir</li>
       </ul>
-      <input class="bikes" type="checkbox" onclick="dispChildList(this)">bikes<br>
+      <input class="bikes" type="checkbox" onclick="checkChildList(this)">
+      <a class="bikes" onclick="dispChildList(this)">bikes</a><br>
       <ul class="bikes" type=none style="padding-left:20px;display:none">
         <li ><input class="bikes" type="checkbox">v-rod</li>
         <li ><input class="bikes" type="checkbox">pulsar</li>
