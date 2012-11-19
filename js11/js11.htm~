@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+  <head>
+  <style>
+  </style>
+  <script type="text/javascript" src="js11.js">
+  </script>
+  </head>
+  <body>
+  <input type="text" id="url">
+  <input type="button" onclick="getDomains()">
+  
+  
+  </body>
+</html>
