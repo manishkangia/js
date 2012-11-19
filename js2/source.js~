@@ -1,11 +1,13 @@
-function do_check(e) {
+function do_check(inputSelected) {
     var names = "", count = 0, i;
     var group = document.getElementsByClassName("days");
     
     // to take a count of the number of checkboxes selected
     for (i = 0; i < group.length; i++) {
         if (group[i].checked == true) {
+            if(group[i].value != inputSelected.value) {
             names = names + "," + group[i].value;
+            }
             count = count + 1;
         }
     }
@@ -17,13 +19,9 @@ function do_check(e) {
     }
   
     //action on the fourth check box being selected
-    if (count == 4) {
-        if (e) {
-            e.preventDefault(); }
-        else {
-            window.event.preventDefault(); }
-            
-        alert("Not more than 3 can be selected and you have chosen 4" + names);
+    if (count == 4) {    
+        alert("Not more than 3 can be selected and you have already chosen 3 namely" + names);
+        inputSelected.checked = false;
     }
 }
 
