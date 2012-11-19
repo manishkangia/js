@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="source.js"></script>
+  </head>
+  <body>
+    <p> You can select at max. 3 days </p><br>
+    <input type="checkbox" class="check_all" onclick="unchecking_all()" >NONE<br>
+    <input type="checkbox" class="days" onclick="do_check(event)" onmouseover="check_check()" value="sunday">Sunday<br>
+    <input type="checkbox" class="days" onclick="do_check(event)" onmouseover="check_check()" value="monday">Monday<br>
+    <input type="checkbox" class="days" onclick="do_check(event)" onmouseover="check_check()" value="tuesday">Tuesday<br>
+    <input type="checkbox" class="days" onclick="do_check(event)" onmouseover="check_check()" value="wednesday">Wednesday<br>
+    <input type="checkbox" class="days" onclick="do_check(event)" onmouseover="check_check()" value="thursday">Thursday<br>
+    <input type="checkbox" class="days" onclick="do_check(event)" onmouseover="check_check()" value="friday">Friday<br>
+    <input type="checkbox" class="days" onclick="do_check(event)" onmouseover="check_check()" value="saturday">Saturday
+  </body>
+</html>
