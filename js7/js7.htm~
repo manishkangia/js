@@ -1,21 +1,12 @@
 <!DOCTYPE html>
 <html>
   <head>
-  <script>
-    function newWindow() {
-    var url=document.getElementById("url").value;
-    var toMatch=/[^ ]/g;
-    if(url.match(toMatch)!=null) {
-      myWindow=window.open(url,'new window','width=400px','height=450px','status=no','scrollbars=no','toolbar=yes');
-}
-    else
-    alert("please enter a web address");
-}
-</script>
-<style>
-</style>
-</head>
-<body>
-Enter a URL<input id="url" type="text"><input type="submit" value="go" onclick="newWindow()">
-</body>
+  <script text="text/javascript" src="js7.js">
+  </script>
+  <style>
+  </style>
+  </head>
+  <body>
+  Enter a URL<input id="url" type="text"><input type="submit" value="go" onclick="newWindow()">
+  </body>
 </html>
