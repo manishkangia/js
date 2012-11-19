@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/javascript" src="source.js"></script>
+  </head>
+  <body>
+    <a href="" onclick="checking_all(1);return false;">CHECK ALL</a>
+    <a href="" onclick="checking_all(0);return false;">NONE</a><br>
+    <input type="checkbox" name="color_choice" value="red" class= "colors" >RED<br>
+    <input type="checkbox" name="color_choice" value="green" class= "colors" >GREEN<br>
+    <input type="checkbox" name="color_choice" value="yellow" class= "colors" >YELLOW<br>
+    <input type="checkbox" name="color_choice" value="white" class= "colors" >WHITE<br>
+    <input type="checkbox" name="color_choice" value="black" class= "colors" >BLACK<br>
+
+  </body>
+</html>
