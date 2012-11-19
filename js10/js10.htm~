@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script>
+    function checkField() {
+    var inputEle=document.getElementById("inputElement").value;
+    var putEle=document.getElementById("putElement");
+    var regex = /^\d+$/;
+    var check=regex.test(inputEle);
+    if(check) {
+       putEle.value="true";
+       alert("form submitted");
+    }
+    else {
+    putEle.value="false";
+    alert("form not submitted");
+    return false;
+    }
+}
+    </script>
+    <style>
+    </style>
+  </head>
+  <body>
+  <form action="" name="myForm" style="width:200px" onsubmit="return checkField()">
+  Enter Number:<input type="text" id="inputElement">
+  Result:<input type="text" disabled="disabled" id="putElement">
+  <input type="submit" value="submit">
+  </form>
+  </body>
+</html>
