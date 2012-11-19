@@ -1,4 +1,4 @@
-//To set the index of time-zone as 0 initially
+//To set the index of time-zone as -1 initially
 function defaultIndex() {
   var ele=document.getElementById("timezone");
   ele.selectedIndex=-1;
@@ -27,8 +27,8 @@ function validateForm() {
           return false;
         }
       }
-   
-       // For E-mail validation
+      
+        // For E-mail validation
       if(list_elements[i].className=="e-mail") {
         var genEx=/^[a-zA-z0-9]+[\w\.]*\w+@\w+\.[a-zA-Z]{2,3}$/;
         var id= list_elements[i].value;
@@ -37,8 +37,8 @@ function validateForm() {
 		      return false;
 		    }
      }
-        
-        //To check for TimeZone selection
+
+      //To check for TimeZone selection
         if(list_elements[i].id=="timezone") {
           if(list_elements[i].selectedIndex==-1) {
            alert("please select a time zone");
@@ -46,8 +46,7 @@ function validateForm() {
           }
         }
         
-
-       // For URL validation 
+               // For URL validation 
       if(list_elements[i].className=="url") {
         var genEx=/^(https?:\/\/)?(www\.){1}\w+\.(com|org)$/;
         var id= list_elements[i].value;
@@ -56,7 +55,7 @@ function validateForm() {
 		      return false;
 		    }
 		  }
-
+        
        //To check for "receive notifications checkbox"
       if(list_elements[i].type=="checkbox") {
         if(list_elements[i].checked==false) {
