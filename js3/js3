@@ -1,0 +1,26 @@
+<HTML> 
+  <head> 
+    <script type="text/javascript" src="dynamicTableScript.js" ></script>
+    <style>
+      table#myTable tr td {width:33%;}
+    </style>
+  </head>
+  <BODY>
+    <p id="justcheck"></p> 
+    <table name="entry" width="100%" id="myTable" border="1">
+      <TBODY>
+        <tr>
+          <th>Name</th>
+          <th>Email</th>
+          <th>Action</th>
+        </tr>
+      </TBODY>
+    </table>
+
+    <input type="button" name="add" value="Add" onClick="addTr()">
+
+  </BODY>
+</HTML>
+
+
+
