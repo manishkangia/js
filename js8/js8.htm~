@@ -18,8 +18,8 @@
   <option value="Delhi">Delhi</option>
   <option value="Dallas">Dallas</option>
   </select>
-  <input id="buttons" type="button" value="add" onclick="move(true)">
-  <input id="buttons" type="button" value="remove" onclick="move(false)">
+  <input id="buttons" type="button" value="add" onclick="move('list1','list2')">
+  <input id="buttons" type="button" value="remove" onclick="move('list2','list1')">
   <select id="list2" size="7" multiple="multiple" onclick="generateList(this)">
   <option value="pakistan">pakistan
   </select>
