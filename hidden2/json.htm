@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+      img { height:150px;width:150px;margin:0px;}
+      tr{border-style:solid;height:150px;width:150px;float:left;}
+      table {border-style:solid;width:790px;}
+      </style>
+      <script type="text/javascript" src="json.js">
+      </script>
+  </head>
+  <body onload="fillTable()">
+      Order of Items
+      <select id="order" style="margin-top:10px;">
+          <option value="ascending" onclick="changeOrder(1)">low to high
+          <option value="descending" onclick="changeOrder(0)">high to low
+      </select>
+      <br>
+      Sort Items By 
+      <select id="sortList" style="margin-left:7px;">
+          <option value="color" onclick="toSortTable(this)">color
+          <option value="brand" onclick="toSortTable(this)">brand
+          <option value="name" onclick="toSortTable(this)">name
+          <option value="sold_out" onclick="toSortTable(this)">availability
+      </select>
+      <div align="center" style="margin-top:-10px;">
+          <table id="table">
+              <tr id="1"></tr>
+              <tr id="2"></tr>
+              <tr id="3"></tr>
+              <tr id="4"></tr>
+              <tr id="5"></tr>
+              <tr id="6"></tr>
+              <tr id="7"></tr>
+              <tr id="8"></tr>
+              <tr id="9"></tr>
+              <tr id="10"></tr>
+              <tr id="11"></tr>
+              <tr id="12"></tr>
+              <tr id="13"></tr>
+              <tr id="14"></tr>
+              <tr id="15"></tr>
+              <tr id="16"></tr>
+              <tr id="17"></tr>
+              <tr id="18"></tr>
+              <tr id="19"></tr>
+              <tr id="20"></tr>
+          </table>
+      </div>
+  </body>
+</html>
