@@ -1,0 +1,84 @@
+memoryValue=0;
+var prev_value = 0;
+var current_status = "number";
+var current_operation = "";
+function displayNumber(number) {
+    var screen = document.getElementById("screen");
+    var value = screen.value;
+    value = value + number;
+    screen.value = value;
+    current_status="number/operator";
+}
+
+function addSubMulDiv(operator) {
+    
+        var screen = document.getElementById("screen");
+        if(current_status == "number/operator") {
+        console.log(prev_value);
+        prev_value = parseFloat(screen.value,10);
+        console.log(prev_value);
+        current_status="number";
+        }
+        current_operation = operator;
+        screen.value="";
+}    
+
+function displayResult(value) {
+    
+    
+    var screen = document.getElementById("screen");
+    var currentValue=parseFloat(screen.value,10);
+    var result =0;
+    
+    var operator = current_operation;
+    if(operator=='+') {
+       result = prev_value + currentValue;
+    }
+    if(operator=='-') {
+       result = prev_value - currentValue;
+    }
+    if(operator=='*') {
+        result= prev_value * currentValue;
+    }
+    if(operator=='/') {
+        result=prev_value/currentValue;
+    }
+    if(value=='+/-') {
+    result=0-currentValue;
+    }
+    if(value=='M+') {
+    result = prev_value + currentValue;
+    memoryValue = memoryValue + result;
+    result=0;
+    prev_value=0;
+    current_status="number";
+    }
+    if(value=='M-') {
+    console.log(memoryValue);
+    result = prev_value - currentValue;
+    memoryValue = memoryValue - currentValue;
+    console.log(memoryValue);
+    result=0;
+    }
+    if(value=='MR') {
+    result = memoryValue;
+    prev_value = 0 ;
+    }
+    if(value=='MC') {
+    memoryValue =0;
+    result = memoryValue;
+    prev_value = 0;
+    }
+    screen.value= result;
+    current_operation == "";
+}
+    
+function memoryPlus() {
+    var screen = document.getElementById("screen");
+    var currentValue=parseFloat(screen.value,10);
+    memoryValue = memoryValue + currentValue;
+    screen.value = 0 ;
+    prev_value = 0 ;
+    current_operation="";
+}
+    
