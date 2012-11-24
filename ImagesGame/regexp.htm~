@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Image Game..welcome!!</title>
+      <script type="text/javascript" src="game.js">
+      </script>
+      <style>
+        input { width:40px;height:20px;}
+        button{ border-style :inset;height:55px;width:55px;margin:2px;}
+      </style>
+  </head>
+  <body onload="disableAll()">
+      <button id="startbtn" name="start" onclick="loadGame()" >Start</button><br>
+      <p>ScoreCard :
+      <input type="text" id="scorecard" style="width:30px;" value="0" disabled="disabled"></input>
+      <input type="text" id="expression" style="width:20px;" value=":)" disabled="disabled"><br></p>
+      <p>Time : <input type="text" id="timer" style="width:60px;" value="0" disabled="disabled"></input>Secs</p>
+      <div id="picturestore" style="margin:10px auto auto 100px;width:360px">
+        <button id="0" onclick="btnClicked(this)">
+        <button id="1" onclick="btnClicked(this)">
+        <button id="2" onclick="btnClicked(this)">
+        <button id="3" onclick="btnClicked(this)">
+        <button id="4" onclick="btnClicked(this)">
+        <button id="5" onclick="btnClicked(this)">
+        <button id="6" onclick="btnClicked(this)">
+        <button id="7" onclick="btnClicked(this)">
+        <button id="8" onclick="btnClicked(this)">
+        <button id="9" onclick="btnClicked(this)">
+        <button id="10" onclick="btnClicked(this)">
+        <button id="11" onclick="btnClicked(this)">
+        <button id="12" onclick="btnClicked(this)">
+        <button id="13" onclick="btnClicked(this)">
+        <button id="14" onclick="btnClicked(this)">
+        <button id="15" onclick="btnClicked(this)">
+        <button id="16" onclick="btnClicked(this)">
+        <button id="17" onclick="btnClicked(this)">
+        <button id="18" onclick="btnClicked(this)">
+        <button id="19" onclick="btnClicked(this)">
+        <button id="20" onclick="btnClicked(this)">
+        <button id="21" onclick="btnClicked(this)">
+        <button id="22" onclick="btnClicked(this)">
+        <button id="23" onclick="btnClicked(this)">
+        <button id="24" onclick="btnClicked(this)">
+        <button id="25" onclick="btnClicked(this)">
+        <button id="26" onclick="btnClicked(this)">
+        <button id="27" onclick="btnClicked(this)">
+        <button id="28" onclick="btnClicked(this)">
+        <button id="29" onclick="btnClicked(this)">
+        <button id="30" onclick="btnClicked(this)">
+        <button id="31" onclick="btnClicked(this)">
+        <button id="32" onclick="btnClicked(this)">
+        <button id="33" onclick="btnClicked(this)">
+        <button id="34" onclick="btnClicked(this)">
+        <button id="35" onclick="btnClicked(this)">
+      </div>
+  </body>
+</html>
