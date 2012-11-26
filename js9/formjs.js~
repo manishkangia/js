@@ -46,6 +46,16 @@ function validateForm() {
           }
         }
         
+               // For URL validation 
+      if(list_elements[i].className=="url") {
+        var genEx=/^(https?:\/\/)?(www\.){1}\w+\.(com|org)$/;
+        var id= list_elements[i].value;
+        if(!genEx.test(id)){
+          alert("please enter a valid URL");
+		      return false;
+		    }
+		  }
+        
        //To check for "receive notifications checkbox"
       if(list_elements[i].type=="checkbox") {
         if(list_elements[i].checked==false) {

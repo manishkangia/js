@@ -48,7 +48,7 @@ function validateForm() {
         
                // For URL validation 
       if(list_elements[i].className=="url") {
-        var genEx=/^(https?:\/\/)?(www\.){1}\w+\.(com|org)$/;
+        var genEx=/^(https?:\/\/)?(www\.)?(([A-Za-z0-9.]*)\.)*(\w+\.com){1}/;
         var id= list_elements[i].value;
         if(!genEx.test(id)){
           alert("please enter a valid URL");
