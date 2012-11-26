@@ -2,7 +2,7 @@ function getDomains() {
   var url=document.getElementById("url").value;
   
   //regular expression
-  var regexp=/^(https?:\/\/)?(www\.)?((\S*)\.)*(\w+\.com){1}/;
+  var regexp=/^(https?:\/\/)?(www\.)?(([A-Za-z0-9.]*)\.)*(\w+\.com){1}/;
   var matches=url.match(regexp);
     if (matches[0] == null) {
        alert ("not a valid url");
