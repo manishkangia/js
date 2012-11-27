@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+      <style>
+      img { height:150px;width:150px;margin:0px;}
+      tr{border-style:solid;height:150px;width:150px;float:left;}
+      table {border-style:solid;width:790px;}
+      </style>
+      <script type="text/javascript" src="json.js">
+      </script>
+  </head>
+  <body onload="fillTable()">
+      Order of Items
+      <select id="order" style="margin-top:10px;">
+          <option value="ascending" onclick="changeOrder(1)">low to high
+          <option value="descending" onclick="changeOrder(0)">high to low
+      </select>
+      <br>
+      Sort Items By 
+      <select id="sortList" style="margin-left:7px;">
+          <option value="color" onclick="toSortTable(this)">color
+          <option value="brand" onclick="toSortTable(this)">brand
+          <option value="name" onclick="toSortTable(this)">name
+          <option value="sold_out" onclick="toSortTable(this)">availability
+      </select>
+      <div align="center" style="margin-top:-10px;">
+          <table id="table">
+          <tbody>
+          </tbody>
+          </table>
+      </div>
+  </body>
+</html>
