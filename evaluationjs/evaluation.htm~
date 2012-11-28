@@ -1,0 +1,31 @@
+<html>
+    <head>
+    <style>
+    div { background:gray;height:400px; width:780px; }
+    table { border:1px solid black }
+    th { width :250px;border:1px solid black;}
+    td { width :250px;border:1px solid black;}
+    input { width:250px; margin-left:5px;}
+    </style>
+    <script type="text/javascript" src="dataEntry.js">
+    </script>
+    </head>
+    <body>
+    <div >
+    <table id="myTable">
+    <tbod>
+    <th><a data-value="ID" data-orderby="true" onclick="sortTable(this,0);return false;">ID</a></th>
+    <th><a data-value="name" data-orderby="true" onclick="sortTable(this,1);return false;">name</a></th>
+    <th><a data-value="email" data-orderby="true" onclick="sortTable(this,2);return false;">email</a></th>
+    </tbody>
+    <tbody>
+    </tbody>
+    </table>
+    </div>
+    <form>
+        <input id="name" type="text">
+        <input id="email" type="text">
+        <input type ="button" value="submitValues" onclick="addEntry()">
+    </form>
+    </body>
+</html>
